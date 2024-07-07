@@ -51,7 +51,7 @@ export default function Slide() {
                         <QRCode
                             size={256}
                             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                            value={"https://innoveast.netlify.app/"}
+                            value={"https://innoveast.vercel.app/"}
                             viewBox={`0 0 256 256`}
                             className={style.qrCode}
                         />
