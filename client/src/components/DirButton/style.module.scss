@@ -4,8 +4,8 @@
 .next {
     display: flex;
     @extend .submit;
-    position: absolute;
-    bottom: 0%;
+    position: fixed;
+    bottom: 3%;
 
     &>img {
         width: 40px;
