@@ -4,7 +4,7 @@
 .next {
     display: flex;
     @extend .submit;
-    position: relative;
+    position: static;
     bottom: 3%;
 
     &>img {
