@@ -7,8 +7,7 @@
     gap: 3em;
     @extend .submit;
     position: absolute;
-    bottom: 3%;
-
+bottom: 3vh;
     &>img {
         width: 40px;
     }
