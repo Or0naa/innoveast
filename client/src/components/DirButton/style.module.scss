@@ -7,7 +7,8 @@
     gap: 3em;
     @extend .submit;
     position: absolute;
-bottom: 3vh;
+    top: 99%;
+
     &>img {
         width: 40px;
     }
@@ -15,6 +16,7 @@ bottom: 3vh;
 
 .back {
     right: 15%;
+
     &>img {
         transform: rotate(90deg);
     }
@@ -22,6 +24,7 @@ bottom: 3vh;
 
 .next {
     left: 15%;
+
     &>img {
         transform: rotate(-90deg);
     }
