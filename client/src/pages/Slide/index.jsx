@@ -51,7 +51,7 @@ export default function Slide() {
                         <QRCode
                             size={256}
                             style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                            value={"https://survey.vaccines.gov.il/survey"}
+                            value={"https://innoveast.netlify.app/"}
                             viewBox={`0 0 256 256`}
                             className={style.qrCode}
                         />
