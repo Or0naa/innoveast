@@ -3,6 +3,8 @@
 .back,
 .next {
     display: flex;
+    flex-direction: row;
+    gap: 3em;
     @extend .submit;
     position: absolute;
     bottom: 3%;
