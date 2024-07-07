@@ -64,6 +64,7 @@
     align-items: center;
     margin-top: 2rem;
 
+
     .form_group {
       display: flex;
       flex-direction: column;
@@ -211,5 +212,22 @@
   color: inherit;
   /* שימוש בצבע של האלמנט האב */
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin-top: 1rem;
+  }
+  
+  .some-element {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .another-element {
+    width: 100%;
+    padding: 10px;
+  }
 }
 
