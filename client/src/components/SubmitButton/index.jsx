@@ -10,7 +10,7 @@ export default function SubmitButton() {
 
     return (
         <button type="button" className={active ? style.active : style.button} onClick={handleClick}>
-            <p>{active ? "Thanks" : "Submit"}</p>
+            <p>{active ? "Thanks" : "שליחה"}</p>
             <div className={style.check_box}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                     <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
