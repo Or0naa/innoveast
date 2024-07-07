@@ -4,21 +4,11 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: var(--dark-primary-color);
     justify-content: center;
     align-items: center;
     text-shadow: 3px 3px 3px #000;
 
-    &>img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: absolute;
-        filter: drop-shadow(0px 0px 10px #000) blur(5px) brightness(0.5);
-        transform: rotate(-90deg);
 
-
-    }
 }
 
 .container {
@@ -28,6 +18,17 @@
     justify-content: center;
     align-items: center;
     direction: rtl; // Added for RTL support
+    background-color: var(--dark-primary-color);
+    &>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: fixed;
+        filter: drop-shadow(0px 0px 10px #000) blur(5px) brightness(0.5);
+        transform: rotate(-90deg);
+
+
+    }
 
     .box {
         width: 750px; // Increased size

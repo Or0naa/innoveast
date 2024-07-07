@@ -42,7 +42,7 @@ export default function Jobes() {
     WordCloud(wordCloudRef.current, {
       list: words,
       gridSize: Math.round(16 * window.innerWidth / 1024),
-      weightFactor: size => Math.log2(size + 1) * 25,
+      weightFactor: size => Math.log2(size + 1) * 15,
       color: (word, weight) => colors[Math.floor(Math.random() * colors.length)], // בחירת צבע רנדומלי מהמערך
       rotateRatio: 0.5,
       rotationSteps: 2,
