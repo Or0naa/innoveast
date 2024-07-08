@@ -8,7 +8,7 @@ import QRCode from 'react-qr-code';
 import TitleJobs from '../../components/TitleJobs';
 
 export default function Slide() {
-    const [slide, setSlide] = useState("jobs");
+    const [slide, setSlide] = useState("from");
     const responses = useSurveyStore((state) => state.responses);
 
     useEffect(() => {
