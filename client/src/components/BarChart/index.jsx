@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import 'chartjs-plugin-datalabels';
 import { Bar } from 'react-chartjs-2';
 import { useSurveyStore } from '../../store';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartDataLabels);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 export default function BarChart() {
   const responses = useSurveyStore((state) => state.responses);
@@ -87,14 +85,6 @@ export default function BarChart() {
               size: 18,
             },
           },
-          datalabels: {
-            anchor: 'end',
-            align: 'top',
-            color: '#fff', // צבע לבן לתוויות
-            font: {
-              size: 18, // גודל הפונט של התוויות
-            },
-          },
         },
         scales: {
           y: {
@@ -103,7 +93,6 @@ export default function BarChart() {
               color: '#fff', // צבע לבן לציר ה-y
               font: {
                 size: 10, // גודל הפונט של התוויות בציר ה-y
-                
               },
             },
           },
