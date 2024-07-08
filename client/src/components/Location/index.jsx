@@ -31,7 +31,7 @@ export default function Location() {
     WordCloud(wordCloudRef.current, { // קריאה ל-WordCloud.js עם הפרמטרים הדרושים
       list: words, // רשימת המילים והספירות
       gridSize: Math.round(16 * window.innerWidth / 1024), // גודל הגריד בהתאמה לרוחב החלון
-      weightFactor: size => Math.log2(size + 1) * 17, // פונקציה להתאמת הגודל בהתאם לספירה
+      weightFactor: size => Math.log2(size + 1) * 25, // פונקציה להתאמת הגודל בהתאם לספירה
       color: (word, weight) => colors[Math.floor(Math.random() * colors.length)], // בחירת צבע רנדומלי מהמערך
       rotateRatio: 0.5, // יחס הסיבוב של המילים
       rotationSteps: 2, // שלבי הסיבוב (0 או 90 מעלות)

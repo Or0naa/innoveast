@@ -9,6 +9,7 @@
     padding: 3em;
     height: 100vh;
     width: 100%;
+    
 
 }
 
@@ -18,23 +19,27 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
+    &>p{
+        font-size: 30px;
+
+    }
 
     &>h2 {
         color: #fff;
-        font-size: 24px;
+        font-size: 40px;
     }
 }
 
 .responses {
     color: var(--light-primary-color);
     margin-left: 10px;
-    font-size: 36px;
+    font-size: 45px;
 }
 
 .main {
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
 
     .logoContainer {
         height: 100%;
@@ -72,5 +77,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin:  1em;
+    margin: 0.5em;
+}
+
+.credit{
+    position: fixed;
+    top: 15px;
+    left: 35px;
+    width: 7%;
+    filter: drop-shadow(0px 0px 7px #fff);
+    border-radius: 7px;
+    padding: 2px;
 }

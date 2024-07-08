@@ -36,7 +36,6 @@ export default function App() {
   return (
     <div>
       <RouterProvider router={router} />
-      <img src="/credit.png" className="credit" alt="c" />
     </div>
   )
 }

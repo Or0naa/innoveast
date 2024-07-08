@@ -8,6 +8,8 @@ export default function SurveyPage() {
     <div className={style.survey_page}>
       <Header/>
       <Outlet />
+      <img src="/credit.png" className="credit" alt="c" />
+
 
     </div>
   )

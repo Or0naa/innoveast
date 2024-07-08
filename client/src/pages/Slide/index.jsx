@@ -5,6 +5,7 @@ import BarChart from '../../components/BarChart';
 import Location from '../../components/Location';
 import { useSurveyStore } from '../../store';
 import QRCode from 'react-qr-code';
+import TitleJobs from '../../components/TitleJobs';
 
 export default function Slide() {
     const [slide, setSlide] = useState("from");
@@ -15,6 +16,8 @@ export default function Slide() {
             if (slide === "from") {
                 setSlide("jobs");
             } else if (slide === "jobs") {
+                setSlide("title");
+            } else if (slide === "title") {
                 setSlide("votes");
             } else if (slide === "votes") {
                 setSlide("from");
@@ -26,6 +29,8 @@ export default function Slide() {
 
     return (
         <div className={style.container}>
+            <img src="/credit.png" className={style.credit} alt="c" />
+
             <div className={style.header}>
                 <h1>כיף שבאתם, נשמח להכיר אתכם קצת יותר</h1>
                 <p>עד עכשיו מילאו את שאלון ההיכרות שלנו:
@@ -34,7 +39,10 @@ export default function Slide() {
                 </p>
                 <p>רוצים למלא גם? סרקו את הברקוד</p>
                 <h2>
-                    {slide === "from" ? "לפי מה שעניתם אתם גרים ב:" : slide === "jobs" ? "לפי מה שעניתם אתם עובדים ב:" : "הכי חשוב לכם שנעשה יחד:"}
+                    {slide === "from" ? "לפי מה שעניתם אתם גרים ב:" :
+                        slide === "jobs" ? "לפי מה שעניתם אתם עובדים ב:" :
+                            slide === "title" ? "לפי מה שעניתם אתם עובדים בתפקיד:" :
+                                "הכי חשוב לכם שנעשה יחד:"}
                 </h2>
             </div>
             <div className={style.main}>
@@ -44,7 +52,8 @@ export default function Slide() {
                 <div className={style.content}>
                     {slide === "from" ? <Location /> :
                         slide === "jobs" ? <Jobes /> :
-                            <BarChart />}
+                            slide === "title" ? <TitleJobs /> :
+                                <BarChart />}
                 </div>
                 <div className={style.qr}>
                     <div className={style.qrCodeContainer}>
