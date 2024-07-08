@@ -39,6 +39,16 @@ p {
   font-size: 3rem;
 }
 
+.credit{
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  filter: drop-shadow(0px 0px 4px #fff) drop-shadow(0px 0px 8px #fff);
+  border-radius: 7px;
+  padding: 2px;
+}
+
 .start {
   background-color: var(--button-color);
   color: var(--text-color);
