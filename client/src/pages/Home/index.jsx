@@ -18,7 +18,8 @@ export default function Home() {
             <p>מספר האנשים שענו על השאלון:
                 <span className={style.responses}> {responses.length}</span>
             </p>
-      
+            <img src="/credit.png" className={style.credit} alt="c" />
+
             <button className={style.start} onClick={() => nav('/survey/step1')}>התחל שאלון</button>
         </div>
     )
